@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Herfy</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="image/hlogo.png" type="icon">
+	    
+	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+	<link href="css/showall.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!--<nav class="navbar navbar-custom navbar-fixed-top">
+	 	<div class="container">
+	 		<a href="index.html"><img src="image/hlogo.png" width="60" height="60"></a>
+	 		<a class="col" href="#" style="text-decoration: none; font-size: 20px; color: black;">Show All</a>
+	    	<ul class="nav navbar-nav navbar-right">
+	      		<img src="image/ic_my_cart.png" width="60" height="60">
+	    	</ul>
+  		</div>
+	</nav>-->
+
+	<div class="row navi col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<center><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<a href="index.html"><img src="image/hlogo.png" width="60" height="60"></a>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<a class="col" href="#" style="text-decoration: none; font-size: 25px; color: white; text-transform: uppercase; font-style: italic;">Show All</a>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<img src="image/shopping-cart.png" width="60" height="60">
+		</div></center>
+	</div>
+
+	<div class="empty" style="height: 80px"></div>
+
+	<form action="/hms/accommodations" method="GET"> 
+	  <div class="row" style="margin: 0px">
+	    <div class="col-xs-6 col-md-4">
+	      <div class="input-group">
+	        <input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
+	        <div class="input-group-btn">
+	          <button class="btn btn-primary" type="submit">
+	          	<i class="fa fa-search" aria-hidden="true"></i>
+	          </button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</form>
+
+<br>
+<br>	
+
+	<div class="container-fluid showallitems" style="margin: 0px; padding: 0px;">
+		<div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin: 0px; padding: 0px;">
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage11.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Chicken Burger Combo</b></h4>
+						<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+						<!--<span>SAR 30</span>
+						<div class="qty">
+        					<span class="minus bg-dark">-</span>
+        					<input type="number" class="count" name="qty" value="0">
+        					<span class="plus bg-dark">+</span>
+    					</div>-->
+	    			</div>
+	    			
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage12.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Ice Cream</b></h4>
+						<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+		    		</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage21.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Big Herfy With Cheese Combo</b></h4> 
+						<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage22.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Super Chicken Combo</b></h4>
+						<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage23.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Super Herfy Combo</b></h4> 
+						<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage24.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Chicken Burger</b></h4>
+						<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage25.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Beef Burger</b></h4> 
+						<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage26.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Chicken Nuggets</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage27.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Chicken Rings</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage28.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Cappuccino Frappe</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage29.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Cheese Cake</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage30.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Oreo Cool</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage31.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Chicken Tender Combo</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage32.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Herfy Chicken Rings Combo</b></h4>
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage33.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Fish Fillet Combo</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage34.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Double Herfy Combo</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage35.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Grilled Chicken Combo</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage36.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Chicken Tortilla Combo</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage37.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Beef Tortilla Combo</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage38.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Fish Tortilla Combo</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage39.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Crispy Chicken Combo</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage40.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Chili Chicken Combo</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+			
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage41.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Super Chili Chicken Combo</b></h4>
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage42.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Herfy Super Starr Combo</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage43.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Lite Lite Grill Combo</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage44.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Vegie Delight Burger Combo</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage45.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Chicken Rings</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage46.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Onion Rings</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage47.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Apple Pie</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage48.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Caesars Chicken Salad</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
+				<div class="cardcontent" style="">
+					<center><img class="img-responsive" src="image/himage49.jpeg"></center>
+					<div class="cardtext">
+						<h4><b>Green Salad</b></h4> 
+	    				<table>
+							<thead>
+								<tr>
+									<th>SAR 30</th>
+
+									<th class="qty">
+										<button class="btn btn-default btn-xs" onclick="minus()">
+											<i class="fas fa-minus"></i></button>
+        								<label id="count" value="0">0</label>
+        								<button class="btn btn-default btn-xs" onclick="plus()">
+        									<i class="fas fa-plus"></i></button>
+        							</th>
+								</tr>
+							</thead>
+						</table>
+	    			</div>
+	    		</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<nav class="navbar navbar-custom navbar-fixed-bottom">
+	    <div class="container">
+	            <ul class="nav navbar-nav col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                <center><a href="showall.html"><li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img class="img-responsive" src="image/h_all.png" width="40" height="40">Show All</a></li></center>
+	                <center><a href="combomeals.html"><li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img class="img-responsive" src="image/h_combo_meal.png" width="40" height="40">Combo Meals</a></li></center>
+	                <center><a href="kiddiemeals.html"><li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img class="img-responsive" src="image/h_kiddie_meal.png" width="40" height="40">Kiddie Meals</a></li></center>
+	                <center><a href="sideorder.html"><li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img class="img-responsive"src="image/h_side_order.png" width="40" height="40">Side Orders</a></li></center>
+	            </ul>
+	    </div>
+	</nav>
+
+	<div class="empty" style="height: 80px"></div>
+	
+
+	
+	<script type="text/javascript">
+	
+		    var count = 0;
+		    var countEl = document.getElementById("count");
+		    function plus(){
+		        count++;
+		        countEl.innerHTML = count;
+		    }
+		    function minus(){
+		      if (count > 0) {
+		        count--;
+		        countEl.innerHTML = count;
+		      }  
+		    }
+	</script>
+
+
+</body>
+</html>

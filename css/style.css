@@ -6,7 +6,8 @@ body{
 	background-color: #1E90FF;
 	border-radius: 0;
 	border-bottom: 2px solid #5F5F5F;
-	padding: 5px; 
+	padding: 5px;
+
 }
 .navbar-fixed-top .navbar-brand{
 	color: white;
@@ -34,32 +35,17 @@ body{
 	margin: 25px 0px 15px 0px;
 	padding: 0px;
 	overflow: hidden;
-	border-radius: 20px;
+	border-radius: 10px;
 	position: relative;
 }
-.showall img, .combomeals img, .kiddiemeals img, .sideorders img{
-	
-}
 
-.combomeals, .sideorders{
-	
-}
-
-.showall img{
-	opacity: 0.9;
-}
 
 .centered {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	color: white;
 	text-align: center;
 	font-variant: small-caps;
-	font-size: 30px;
+	font-size: 25px;
 	background-color: rgba(0, 0, 0, 0.7);
-	border-radius: 10px;
 	padding: 10px 30px;
 	font-style: italic;
 }
@@ -85,27 +71,26 @@ body{
 	font-style: italic;
 	font-size: 15px;
 }
+.navbar-nav{
+	margin: 0px;
+	padding: 0px;
+}
 
 @media screen and (max-width: 768px){
 .showall, .combomeals, .kiddiemeals, .sideorders{
-	margin: 20px 0px 5px 0px;
+	margin: 20px -5px 5px -5px;
 	padding: 0px;
 	overflow: hidden;
-	border-radius: 20px;
+	border-radius: 10px;
 	position: relative;
 }
 
 .centered {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	color: white;
 	text-align: center;
 	font-variant: small-caps;
-	font-size: 20px;
+	font-size: 18px;
 	background-color: rgba(0, 0, 0, 0.7);
-	border-radius: 10px;
 	padding: 10px 10px;
 }
 

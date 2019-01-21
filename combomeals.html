@@ -20,48 +20,37 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
-	<!--<nav class="navbar navbar-custom navbar-fixed-top">
-	 	<div class="container">
-	 		<a href="index.html"><img src="image/hlogo.png" width="60" height="60"></a>
-	 		<a class="col" href="#" style="text-decoration: none; font-size: 20px; color: black;">Show All</a>
-	    	<ul class="nav navbar-nav navbar-right">
-	      		<img src="image/ic_my_cart.png" width="60" height="60">
-	    	</ul>
-  		</div>
-	</nav>-->
 
 	<div class="row navi col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		<center><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-			<a href="index.html"><img src="image/hlogo.png" width="60" height="60"></a>
+		<center><div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 logoimg">
+			<a href="index.html"><img src="image/hlogo.png" width="40" height="40"></a>
 		</div>
-		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-			<a class="col" href="#" style="text-decoration: none; font-size: 25px; color: white; text-transform: uppercase; font-style: italic;">Combo Meals</a>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 title">
+			<a class="col" href="#">Combo Meals</a>
 		</div>
-		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-			<img src="image/shopping-cart.png" width="60" height="60">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 cartimg">
+			<a href="cart.html"><img src="image/shopping-cart.png" width="40" height="30"><br><label>1 Item | SAR 30</label></a>
 		</div></center>
 	</div>
 
-	<div class="empty" style="height: 80px"></div>
+	<div class="empty" style="height: 70px"></div>
 
-	<form action="/hms/accommodations" method="GET"> 
-	  <div class="row" style="margin: 0px">
-	    <div class="col-xs-6 col-md-4">
-	      <div class="input-group">
-	        <input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
-	        <div class="input-group-btn">
-	          <button class="btn btn-primary" type="submit">
-	          	<i class="fa fa-search" aria-hidden="true"></i>
-	          </button>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
+	<form method="GET"> 
+		<div class="row" style="margin: 0px">
+	    	<div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8">
+	      		<div class="input-group">
+	        		<input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
+	        		<div class="input-group-btn">
+	          			<button class="btn btn-primary" type="submit">
+	          				<i class="fa fa-search" aria-hidden="true"></i>
+	       				</button>
+	        		</div>
+	      		</div>
+	    	</div>
+	  	</div>
 	</form>
 
 <br>
-<br>	
-
 	<div class="container-fluid showallitems" style="margin: 0px; padding: 0px;">
 		<div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin: 0px; padding: 0px;">
 			<div class="card col-lg-3 col-md-3 col-sm-6 col-xs-12">	
@@ -75,11 +64,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button></span>
         							</th>
 								</tr>
 							</thead>
@@ -106,11 +95,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button></span>
         							</th>
 								</tr>
 							</thead>
@@ -130,11 +119,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button></span>
         							</th>
 								</tr>
 							</thead>
@@ -155,11 +144,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button></span>
         							</th>
 								</tr>
 							</thead>
@@ -179,11 +168,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button></span>
         							</th>
 								</tr>
 							</thead>
@@ -203,11 +192,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button></span>
         							</th>
 								</tr>
 							</thead>
@@ -227,11 +216,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button></span>
         							</th>
 								</tr>
 							</thead>
@@ -252,11 +241,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button><span>
         							</th>
 								</tr>
 							</thead>
@@ -277,11 +266,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button></span>
         							</th>
 								</tr>
 							</thead>
@@ -302,11 +291,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button></span>
         							</th>
 								</tr>
 							</thead>
@@ -327,11 +316,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button></span>
         							</th>
 								</tr>
 							</thead>
@@ -352,11 +341,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button></span>
         							</th>
 								</tr>
 							</thead>
@@ -377,11 +366,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button></span>
         							</th>
 								</tr>
 							</thead>
@@ -402,11 +391,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button></span>
         							</th>
 								</tr>
 							</thead>
@@ -427,11 +416,11 @@
 									<th>SAR 30</th>
 
 									<th class="qty">
-										<button class="btn btn-default btn-xs" onclick="minus()">
+										<span><button class="btn btn-default btn-xs" onclick="minus()">
 											<i class="fas fa-minus"></i></button>
         								<label id="count" value="0">0</label>
         								<button class="btn btn-default btn-xs" onclick="plus()">
-        									<i class="fas fa-plus"></i></button>
+        									<i class="fas fa-plus"></i></button></span>
         							</th>
 								</tr>
 							</thead>
@@ -446,10 +435,10 @@
 	<nav class="navbar navbar-custom navbar-fixed-bottom">
 	    <div class="container">
 	            <ul class="nav navbar-nav col-lg-12 col-md-12 col-sm-12 col-xs-12">
-	                <center><a href="showall.html"><li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img class="img-responsive" src="image/h_all.png" width="40" height="40">Show All</a></li></center>
-	                <center><a href="combomeals.html"><li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img class="img-responsive" src="image/h_combo_meal.png" width="40" height="40">Combo Meals</a></li></center>
-	                <center><a href="kiddiemeals.html"><li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img class="img-responsive" src="image/h_kiddie_meal.png" width="40" height="40">Kiddie Meals</a></li></center>
-	                <center><a href="sideorders.html"><li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img class="img-responsive"src="image/h_side_order.png" width="40" height="40">Side Orders</a></li></center>
+	                <center><a href="showall.html"><li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img class="img-responsive" src="image/h_all.png" width="30" height="30">Show All</a></li></center>
+	                <center><a href="combomeals.html"><li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img class="img-responsive" src="image/h_combo_meal.png" width="30" height="30">Combo Meals</a></li></center>
+	                <center><a href="kiddiemeals.html"><li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img class="img-responsive" src="image/h_kiddie_meal.png" width="30" height="30">Kiddie Meals</a></li></center>
+	                <center><a href="sideorders.html"><li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img class="img-responsive"src="image/h_side_order.png" width="30" height="30">Side Orders</a></li></center>
 	            </ul>
 	    </div>
 	</nav>

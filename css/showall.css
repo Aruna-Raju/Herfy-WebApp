@@ -89,6 +89,7 @@ body{
 	outline: 0;
 	border: 0;
 	background: transparent;
+	border: 1px solid grey;
 }
 .qty span button:focus{
 	background: transparent;
@@ -108,11 +109,13 @@ body{
 	border: 1px solid black;
 }
 
-.navbar-fixed-bottom ul li a{
+.navbar-fixed-bottom ul a li{
 	text-decoration: none;
 	color: white;
-	font-style: italic;
-	font-size: 15px;
+	font-size: 10px;
+	margin: 0px;
+	padding: 0px;
+	white-space: nowrap;
 }
 .navbar-nav{
 	margin: 0px;
@@ -124,12 +127,13 @@ body{
 .navbar-fixed-bottom{
 	margin: 0px;
 }
-
-.navbar-fixed-bottom ul li a{
+.navbar-fixed-bottom ul a li{
 	text-decoration: none;
 	color: white;
-	font-style: italic;
 	font-size: 10px;
+	margin: 0px;
+	padding: 0px 0px;
+	white-space: nowrap;
 }
 }
 
@@ -205,4 +209,5 @@ body{
 }
 .modal-body button{
 	width: auto;
+	color: black;
 }

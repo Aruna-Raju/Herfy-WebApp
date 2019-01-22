@@ -4,101 +4,101 @@ body{
 
 .navbar-fixed-top{
 	background-color: #1E90FF;
-	border-radius: 0;
-	border-bottom: 2px solid #5F5F5F;
-	padding: 5px;
-
+	border-bottom: 1px solid #5F5F5F;
 }
 .navbar-fixed-top .navbar-brand{
 	color: white;
+	font-size: 15px;
 }
-
-
-
-.carous{
-	margin-top: -15px;
-}
-
 
 .carousel-control .icon-prev, .carousel-control .icon-next{
-	font-size: 50px;
+	font-size: 40px;
 }
-
-
-
 .category{
 	margin: 0px;
-
 }
 
 .showall, .combomeals, .kiddiemeals, .sideorders{
 	margin: 25px 0px 15px 0px;
-	padding: 0px;
 	overflow: hidden;
 	border-radius: 10px;
-	position: relative;
 }
-
-
 .centered {
 	color: white;
 	text-align: center;
 	font-variant: small-caps;
-	font-size: 25px;
+	font-size: 20px;
 	background-color: rgba(0, 0, 0, 0.7);
-	padding: 10px 30px;
-	font-style: italic;
-}
-.centered a{
+	padding: 10px 0px;
 	text-decoration: none;
-	color: white;
-
+	white-space: nowrap;
 }
+.showall a:hover{
+	text-decoration: none;
+}
+.combomeals a:hover{
+	text-decoration: none;
+}
+.kiddiemeals a:hover{
+	text-decoration: none;
+}
+.sideorders a:hover{
+	text-decoration: none;
+}
+
 
 
 .navbar-fixed-bottom{
 	background-color: rgb(180, 180, 180);
-	border-radius: 10px 10px 0px 0px;
+	
 }
 
 .navbar-fixed-bottom ul li:hover{
 	border: 1px solid black;
 }
 
-.navbar-fixed-bottom ul li a{
+.navbar-fixed-bottom ul a li{
 	text-decoration: none;
 	color: white;
-	font-style: italic;
-	font-size: 15px;
+	font-size: 10px;
+	margin: 0px;
+	padding: 0px;
+	white-space: nowrap;
 }
-.navbar-nav{
+.navbar-fixed-bottom .navbar-nav{
 	margin: 0px;
 	padding: 0px;
 }
 
 @media screen and (max-width: 768px){
+
+.navbar-fixed-top .navbar-brand{
+	color: white;
+	font-size: 10px;
+}
 .showall, .combomeals, .kiddiemeals, .sideorders{
 	margin: 20px -5px 5px -5px;
-	padding: 0px;
 	overflow: hidden;
 	border-radius: 10px;
-	position: relative;
 }
 
 .centered {
 	color: white;
 	text-align: center;
 	font-variant: small-caps;
-	font-size: 18px;
+	font-size: 15px;
 	background-color: rgba(0, 0, 0, 0.7);
-	padding: 10px 10px;
+	padding: 5px 0px;
+	white-space: nowrap;
 }
 
-.navbar-fixed-bottom ul li a{
+.navbar-fixed-bottom ul a li{
 	text-decoration: none;
 	color: white;
-	font-style: italic;
 	font-size: 10px;
+	margin: 0px;
+	padding: 0px 0px;
+	white-space: nowrap;
 }
 
 }

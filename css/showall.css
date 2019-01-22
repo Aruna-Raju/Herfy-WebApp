@@ -30,6 +30,7 @@ body{
 	z-index: 99;
 	margin: 0px;
 	padding: 0px;
+	color: white;
 }
 
 .card{
@@ -62,7 +63,10 @@ body{
 
 .cardtext {
   padding: 2px 15px;
-  
+  font-size: 10px;
+}
+.cardtext h4{
+	font-size: 15px;
 }
 
 .qty{
@@ -109,8 +113,8 @@ body{
 
 
 
-.order_item{
-	font-size: 12px;
+.order_item span{
+	font-size: 15px;
 }
 
 .addbutton span{
@@ -122,6 +126,7 @@ body{
 	outline: 0;
 	border: 0;
 	background: transparent;
+	font-size: 15px;
 }
 .addbutton span button:focus{
 	background: transparent;
@@ -136,7 +141,9 @@ body{
 	border-width: 0 0 2px;
 	border-color: grey;
 	background-color: transparent;
+	font-size: 15px;
 }
+
 .instruction hr{
 	border-top: 1px solid black;
 }
@@ -148,6 +155,9 @@ body{
 }
 .instruction .disable{
 	color: rgba(0,0,0,.5);
+}
+.navi i{
+	padding-top: 10px;
 }
 
 
@@ -167,92 +177,22 @@ body{
 
 .modal-header {
 	background-color: #1E90FF;
-	width: 100%;
 	height: 50px;
 }
-.modal_title a{
+.modal_icon{
+	color: white;
+}
+.modal_title{
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 16px;
 	color: white;
 	text-transform: uppercase;
-	font-style: italic;
 }
 .modal-body button{
 	width: auto;
 	color: black;
 }
-.order_item{
-	font-size: 12px;
-}
 
-.addbutton span{
-	border: 1px solid grey;
-	padding: 5px;
-}
-
-.addbutton span button{
-	outline: 0;
-	border: 0;
-	background: transparent;
-}
-.addbutton span button:focus{
-	background: transparent;
-	outline: 0;
-}
-.addbutton span button:hover{
-	background: transparent;
-}
-.instruction input{
-	width: 100%;
-	outline: 0;
-	border-width: 0 0 2px;
-	border-color: grey;
-	background-color: transparent;
-}
-.instruction hr{
-	border-top: 1px solid black;
-}
-.instruction button{
-	width: 60%;
-	background-color: #1E90FF;
-	color: white;
-	border-radius: 3px;
-}
-.instruction .disable{
-	color: rgba(0,0,0,.5);
-}
-
-
-
-.payment table{
-	text-align: center;
-}
-.payment table tr th{
-	text-align: center;
-}
-
-.payment table tr #status{
-	color: rgb(255,165,0);
-}
-
-
-
-.modal-header {
-	background-color: #1E90FF;
-	width: 100%;
-	height: 50px;
-}
-.modal_title a{
-	text-decoration: none;
-	font-size: 20px;
-	color: white;
-	text-transform: uppercase;
-	font-style: italic;
-}
-.modal-body button{
-	width: auto;
-	color: black;
-}
 
 
 
@@ -268,5 +208,23 @@ body{
 	margin: 0px;
 	padding: 0px 0px;
 	white-space: nowrap;
+}
+
+.order_item span{
+	font-size: 10px;
+}
+.addbutton span{
+	border: 1px solid grey;
+	padding: 4px;
+}
+
+.addbutton span button{
+	font-size: 10px;
+}
+.instruction input{
+	font-size: 10px;
+}
+.instruction label{
+	font-size: 10px;
 }
 }

@@ -8,7 +8,7 @@ body{
 }
 .navbar-fixed-top .navbar-brand{
 	color: white;
-	font-size: 15px;
+	font-size: 20px;
 }
 
 .carousel-control .icon-prev, .carousel-control .icon-next{
@@ -60,7 +60,7 @@ body{
 .navbar-fixed-bottom ul a li{
 	text-decoration: none;
 	color: white;
-	font-size: 10px;
+	font-size: 15px;
 	margin: 0px;
 	padding: 0px;
 	white-space: nowrap;
@@ -74,7 +74,7 @@ body{
 
 .navbar-fixed-top .navbar-brand{
 	color: white;
-	font-size: 10px;
+	font-size: 15px;
 }
 .showall, .combomeals, .kiddiemeals, .sideorders{
 	margin: 20px -5px 5px -5px;
